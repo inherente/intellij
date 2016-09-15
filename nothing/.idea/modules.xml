@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/nothing.iml" filepath="$PROJECT_DIR$/nothing.iml" />
       <module fileurl="file://$PROJECT_DIR$/../nothing.app/nothing.app.iml" filepath="$PROJECT_DIR$/../nothing.app/nothing.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/../nothing.client/nothing.client.iml" filepath="$PROJECT_DIR$/../nothing.client/nothing.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nothing.eai/nothing.eai.iml" filepath="$PROJECT_DIR$/../nothing.eai/nothing.eai.iml" />
       <module fileurl="file://$PROJECT_DIR$/../nothing.web/nothing.web.iml" filepath="$PROJECT_DIR$/../nothing.web/nothing.web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../nothing.ws/nothing.ws.iml" filepath="$PROJECT_DIR$/../nothing.ws/nothing.ws.iml" />
     </modules>

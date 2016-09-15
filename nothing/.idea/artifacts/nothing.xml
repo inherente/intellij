@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="nothing">
+    <output-path>$PROJECT_DIR$/out/artifacts/nothing</output-path>
+    <root id="archive" name="nothing.ear" />
+  </artifact>
+</component>

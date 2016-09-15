@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="nothing.eai">
+    <output-path>$PROJECT_DIR$/out/artifacts/nothing.eai</output-path>
+    <root id="archive" name="nothing.eai.war">
+      <element id="module-output" name="nothing.eai" />
+    </root>
+  </artifact>
+</component>

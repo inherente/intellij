@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="jdbc.gpon" uuid="5bda5bd1-ef01-431f-92a1-287ffab4575c">
+      <secret-storage>master_key</secret-storage>
+      <user-name>dev_gpon_adm</user-name>
+    </data-source>
+    <data-source name="PersistenceUnit/EclipseLink" uuid="90b8e5ac-20eb-4b14-ad63-a3627f79b5ad">
+      <first-sync>true</first-sync>
+      <user-name>dev_gpon_user</user-name>
+      <user-password>dfdedfc3dfcddfcfdfd8</user-password>
+    </data-source>
+    <data-source name="JDbc.Nothing" uuid="6bc5e1ac-a768-4283-8b17-c524956189df">
+      <secret-storage>master_key</secret-storage>
+      <user-name>local_nothing_adm</user-name>
+    </data-source>
+    <data-source name="LocalPersistenceUnit" uuid="38808166-8016-4fd3-883e-182a6b75ef31">
+      <first-sync>true</first-sync>
+      <user-name>local_nothing_adm</user-name>
+      <user-password>dfdedfc3dfcddfcfdfd8</user-password>
+    </data-source>
+  </component>
+</project>
