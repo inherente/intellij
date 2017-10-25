@@ -3,6 +3,8 @@ package com.inherente.dummy.controller;
 
 import com.inherente.dummy.poc.Blocker;
 import com.inherente.dummy.poc.BroadCaster;
+import com.inherente.dummy.selfservice.Provision;
+import com.inherente.dummy.task.IndependentTask;
 import com.inherente.dummy.test.AddTester;// import com.inherente.dummy.service.GreetingService;//
 import com.inherente.dummy.test.ClientPoolSingleton;
 
@@ -18,9 +20,21 @@ import java.util.logging.Logger;
 @SOAPBinding(style = SOAPBinding.Style.DOCUMENT, parameterStyle = SOAPBinding.ParameterStyle.BARE)
 public class HostServiceManager {
     public static final String DEFAULT_GREETING= "Hello (default ) World -";
+    public static final String OK_MESSAGE= "SUCCESS";
     public static final String GET_GREETING_METHOD_NAME= "getGreeting";
     public static final String ADD_CLIENT_METHOD_NAME= "addClient";
     Logger log= Logger.getLogger(HostServiceManager.class.getName());
+
+    @WebMethod
+    public String saveIt(String name) {
+        String greeting= OK_MESSAGE;
+        boolean flag= false;
+        log.info(GET_GREETING_METHOD_NAME);
+        Provision.serve(name);
+     // new IndependentTask(name).process();
+     // AddTester.addElement(name);
+        return greeting;
+    }
 
     @WebMethod
     public String getGreeting(String name) {
