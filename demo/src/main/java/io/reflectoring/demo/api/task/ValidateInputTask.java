@@ -1,13 +1,17 @@
 package io.reflectoring.demo.api.task;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
+import java.util.logging.Logger;
 
-@Component
-public class ValidateInputTask implements ComponentTask{
+@Service
+public class ValidateInputTask implements ComponentTask {
+    Logger logger = Logger.getLogger(ValidateInputTask.class.getName());
     @Override
     public Map<String, Object> go(Map<String, Object> context) {
-        return null;
+        logger.info("go");
+        return context;
     }
 }

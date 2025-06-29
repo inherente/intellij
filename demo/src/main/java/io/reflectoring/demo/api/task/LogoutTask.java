@@ -1,10 +1,18 @@
 package io.reflectoring.demo.api.task;
 
-import java.util.Map;
+import io.reflectoring.demo.api.controller.ComponentRegistry;
+import org.springframework.stereotype.Service;
 
-public class LogoutTask implements ComponentTask{
+import java.util.Map;
+import java.util.logging.Logger;
+
+@Service
+public class LogoutTask implements ComponentTask {
+    Logger logger = Logger.getLogger(LogoutTask.class.getName());
+
     @Override
     public Map<String, Object> go(Map<String, Object> context) {
-        return null;
+        logger.info("go");
+        return context;
     }
 }
